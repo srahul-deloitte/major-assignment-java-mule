@@ -1,0 +1,19 @@
+<mule xmlns="http://www.mulesoft.org/schema/mule/core"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:assignment-custom="http://www.mulesoft.org/schema/mule/assignment-custom"
+      xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+          http://www.mulesoft.org/schema/mule/assignment-custom http://www.mulesoft.org/schema/mule/assignment-custom/current/mule-assignment-custom.xsd">
+
+    <assignment-custom:config name="config" configId="configId">
+        <assignment-custom:connection requiredParameter="aValue" />
+    </assignment-custom:config>
+
+    <flow name="sayHiFlow">
+        <assignment-custom:say-hi person="Mariano Gonzalez"/>
+    </flow>
+
+    <flow name="retrieveInfoFlow">
+        <assignment-custom:retrieve-info config-ref="config"/>
+    </flow>
+
+</mule>

@@ -1,0 +1,6 @@
+org\mule\extension\customcustom\internal\AssignmentcustomConnectionProvider.class
+org\mule\extension\customcustom\internal\AssignmentcustomConfiguration.class
+org\mule\extension\customcustom\internal\AssignmentcustomConnection.class
+org\mule\extension\customcustom\internal\MediaType.class
+org\mule\extension\customcustom\internal\AssignmentcustomExtension.class
+org\mule\extension\customcustom\internal\AssignmentcustomOperations.class
